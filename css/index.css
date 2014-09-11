@@ -1,0 +1,15 @@
+*{margin: 0;padding: 0;}
+ul li{list-style: none;list-style-type: none;}
+body{height: 100%;}
+
+
+#friendList{float: left; width: 200px; left: 0;margin:0 0 0 10px; border: 1px solid #e5e5e5;border-radius: 10px;}
+.logout{display:inline-block;}
+#onlineFriendList{width: 200px;height: auto;}
+#offlineFriendList{width: 200px;height: auto;}
+.friendLi{ height: 80px;margin-bottom: 5px; cursor: pointer;}
+.friendImg{float: left; width: 60px;height: 60px;margin: 10px;}
+.offlinePic{background-color: #000;opacity: 0.4;}
+.friendnicheng{float: left;display:block;margin-top: 10px;}
+
+#chatArea{float: left; width: 900px;height: 100%;border:1px solid #e5e5e5;}
