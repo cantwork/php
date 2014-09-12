@@ -34,6 +34,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 	<title>无标题</title>
 </head>
 <body>
@@ -50,9 +52,9 @@
 						$headimgurl=$friend->userHeadImage;
 						$friendnicheng=$friend->friendNoteName;
 						if ($friend->userState=="online") {
-							$onlineHtml .="<li class='friendLi'><img src='$headimgurl' class='friendImg' /><a class='friendnicheng'>$friendnicheng</a></li>";
+							$onlineHtml .="<li friendid=$friend->id friendNoteName=$friendnicheng class='friendLi'><img src='$headimgurl' class='friendImg' /><a class='friendnicheng'>$friendnicheng</a></li>";
 						}else{
-							$offlineHtml .="<li class='friendLi'><img src='$headimgurl' class='friendImg offlinePic' /><a class='friendnicheng'>$friendnicheng</a></li>";
+							$offlineHtml .="<li friendid=$friend->id friendNoteName=$friendnicheng class='friendLi'><img src='$headimgurl' class='friendImg offlinePic' /><a class='friendnicheng'>$friendnicheng</a></li>";
 						}
 					}
 				}
@@ -65,7 +67,15 @@
 			?>
 		</ul>
 	</div>
-	<div id="chatArea"></div>
+	<div id="chatArea">
+		<div id="chatTitle"></div>
+		<div id="chatHistory"></div>
+		<div id="chatBar">
+			<input class="chatinput" maxlength="4000" />
+			<div class="btnSend">send</div>
+		</div>
+	</div>
+	<div class="info" senderid="<?php echo $curid;?>"></div>
 
 	
 </body>

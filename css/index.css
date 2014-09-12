@@ -3,7 +3,7 @@ ul li{list-style: none;list-style-type: none;}
 body{height: 100%;}
 
 
-#friendList{float: left; width: 200px; left: 0;margin:0 0 0 10px; border: 1px solid #e5e5e5;border-radius: 10px;}
+#friendList{float: left; width: 200px;min-height: 100%; left: 0;margin:0 0 0 10px; border: 1px solid #e5e5e5;border-radius: 10px;}
 .logout{display:inline-block;}
 #onlineFriendList{width: 200px;height: auto;}
 #offlineFriendList{width: 200px;height: auto;}
@@ -12,4 +12,11 @@ body{height: 100%;}
 .offlinePic{background-color: #000;opacity: 0.4;}
 .friendnicheng{float: left;display:block;margin-top: 10px;}
 
-#chatArea{float: left; width: 900px;height: 100%;border:1px solid #e5e5e5;}
+#chatArea{display: none; float: left; width: 900px;height: 100%;}
+#chatTitle{width: 900px;height: 8%;background-color: #f3f3f3;text-align: center;line-height: 50px; font-size: 28px;}
+#chatHistory{width: 900px;height: 84%;overflow: auto;}
+#chatBar{width: 900px;height: 8%;}
+.chatinput{float: left; width: 800px;height: 40px;outline: none;}
+.btnSend{float: right; width: 80px;height: 40px;color:#fff;text-align: center;line-height: 40px;border-radius: 6px; background-color: #00BFFF;cursor: pointer;}
+
+.info{display: none;}
